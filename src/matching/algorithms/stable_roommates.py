@@ -13,7 +13,9 @@ def first_phase(players):
     free_players = players[:]
     while free_players:
         player = free_players.pop()
+        print("{} is still unmatched!".format(player))
         favourite = player.get_favourite()
+        print("{}'s favorite player is {}".format(player, favourite)
 
         current = favourite.matching
         if current is not None:
